@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "django-multi-user-auth"
+packages = [{ include = "django_multi_user_auth" }]
+version = "0.0.1"
+description = "Django extension for multi user authentication"
+authors = [
+  "Masataka Okudera <masataka.okudera.biz@gmail.com >"
+]
+repository = "https://github.com/delhi09/django-multi-user-auth"
+license = "MIT"
+readme = "README.md"
+keywords = ["django"]
+classifiers = [
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Framework :: Django",
+  "Framework :: Django :: 3.2",
+  "Framework :: Django :: 4.0",
+  "Framework :: Django :: 4.1",
+  "Framework :: Django :: 4.2",
+  "Framework :: Django :: 5.0",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+django = ">=3.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+pytest-django = "^4.8.0"
+ruff = "^0.4.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "setuptools"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+target-version = "py38"
+preview = true
+
+[tool.ruff.lint]
+
+[tool.ruff.lint.isort]
+
+[tool.ruff.format]
